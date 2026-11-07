@@ -1,0 +1,22 @@
+parser-5dc586d597-g4lmk   998m   398Mi   
+parser-5dc586d597-pwkn2   790m   338Mi   
+
+---
+parser-5dc586d597-g4lmk   998m   398Mi   
+parser-5dc586d597-pwkn2   943m   338Mi   
+
+---
+parser-5dc586d597-g4lmk   998m   398Mi   
+parser-5dc586d597-pwkn2   947m   338Mi   
+
+---
+parser-5dc586d597-g4lmk   998m   398Mi   
+parser-5dc586d597-pwkn2   947m   338Mi   
+
+---
+parser-5dc586d597-g4lmk   998m   398Mi   
+parser-5dc586d597-pwkn2   931m   338Mi   
+
+---
+parser-5dc586d597-g4lmk   998m   398Mi   
+parser-5dc586d597-pwkn2   952m   338Mi   

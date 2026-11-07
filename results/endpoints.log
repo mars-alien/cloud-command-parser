@@ -1,0 +1,20 @@
+[2026-11-07T15:05:19] pods: parser-5dc586d597-dxk4q 1/1 Terminating 0 83s parser-5dc586d597-vfspf 1/1 Terminating 0 83s | endpoints: parser <none> 83s
+[2026-11-07T15:05:23] pods: parser-5dc586d597-dxk4q 1/1 Terminating 0 86s parser-5dc586d597-pvz8b 0/1 Running 0 3s parser-5dc586d597-vfspf 1/1 Terminating 0 86s | endpoints: parser 87s
+[2026-11-07T15:05:26] pods: parser-5dc586d597-pvz8b 0/1 Running 0 7s | endpoints: parser 90s
+[2026-11-07T15:05:29] pods: parser-5dc586d597-pvz8b 1/1 Running 0 10s | endpoints: parser 10.42.0.42:8000 93s
+[2026-11-07T15:05:32] pods: parser-5dc586d597-pvz8b 1/1 Running 0 13s | endpoints: parser 10.42.0.42:8000 96s
+[2026-11-07T15:05:35] pods: parser-5dc586d597-pvz8b 1/1 Running 0 16s | endpoints: parser 10.42.0.42:8000 99s
+[2026-11-07T15:05:39] pods: parser-5dc586d597-pvz8b 1/1 Running 0 20s | endpoints: parser 10.42.0.42:8000 103s
+[2026-11-07T15:05:42] pods: parser-5dc586d597-pvz8b 1/1 Running 0 23s | endpoints: parser 10.42.0.42:8000 106s
+[2026-11-07T15:05:46] pods: parser-5dc586d597-pvz8b 1/1 Running 0 26s | endpoints: parser 10.42.0.42:8000 110s
+[2026-11-07T15:05:49] pods: parser-5dc586d597-pvz8b 1/1 Running 0 30s | endpoints: parser 10.42.0.42:8000 113s
+[2026-11-07T15:05:52] pods: parser-5dc586d597-pvz8b 1/1 Running 0 33s | endpoints: parser 10.42.0.42:8000 116s
+[2026-11-07T15:05:56] pods: parser-5dc586d597-pvz8b 1/1 Running 0 36s | endpoints: parser 10.42.0.42:8000 2m
+[2026-11-07T15:05:59] pods: parser-5dc586d597-pvz8b 1/1 Running 0 40s | endpoints: parser 10.42.0.42:8000 2m3s
+[2026-11-07T15:06:02] pods: parser-5dc586d597-pvz8b 1/1 Running 0 43s | endpoints: parser 10.42.0.42:8000 2m6s
+[2026-11-07T15:06:05] pods: parser-5dc586d597-pvz8b 1/1 Running 0 46s | endpoints: parser 10.42.0.42:8000 2m9s
+[2026-11-07T15:06:08] pods: parser-5dc586d597-pvz8b 1/1 Running 0 49s | endpoints: parser 10.42.0.42:8000 2m12s
+[2026-11-07T15:06:12] pods: parser-5dc586d597-pvz8b 1/1 Running 0 53s | endpoints: parser 10.42.0.42:8000 2m16s
+[2026-11-07T15:06:15] pods: parser-5dc586d597-pvz8b 1/1 Running 0 56s | endpoints: parser 10.42.0.42:8000 2m19s
+[2026-11-07T15:06:19] pods: parser-5dc586d597-pvz8b 1/1 Running 0 60s | endpoints: parser 10.42.0.42:8000 2m23s
+[2026-11-07T15:06:22] pods: parser-5dc586d597-pvz8b 1/1 Running 0 63s | endpoints: parser 10.42.0.42:8000 2m26s

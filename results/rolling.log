@@ -1,0 +1,14 @@
+[2026-11-07T15:07:45] set MODEL_VERSION=v2, MODEL_URI=s3://models/v2/
+[2026-11-07T15:08:41] rollout undo
+[2026-11-07T15:12:18] requests=1338 failures=0 (0.00%) p50=860ms p95=1500ms rps=4.486894648160671
+[2026-11-07T15:12:18] headers: {'per_replica': {'parser-5dc586d597-29zxb': 90, 'parser-5dc586d597-pvz8b': 112, 'parser-77698d848c-q6lhg': 117, 'parser-77698d848c-q9c6x': 109, 'parser-5dc586d597-wb2s2': 466, 'parser-5dc586d597-926lp': 447}, 'per_model_version': {'v1': 1115, 'v2': 226}}
+[2026-11-07T15:12:18] after rollback:
+HTTP/1.1 200 OK
+Content-Length: 67
+Content-Type: application/json
+Date: Sat, 07 Nov 2026 09:42:17 GMT
+Server: uvicorn
+X-Model-Version: v1
+X-Served-By: parser-5dc586d597-926lp
+
+{"intent":"weather_query","date":null,"time":null,"place":"london"}

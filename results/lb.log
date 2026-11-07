@@ -1,0 +1,2 @@
+[2026-11-07T15:29:37] requests=601 failures=0 (0.00%) p50=820ms p95=1300ms rps=5.060676926761987
+[2026-11-07T15:29:37] per replica: parser-5dc586d597-g4lmk: 301 (49.8%), parser-5dc586d597-pwkn2: 304 (50.2%)

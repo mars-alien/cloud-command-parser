@@ -1,0 +1,31 @@
+[2026-11-07T15:18:37] HPA applied; waiting for scale down to 1 replica
+[2026-11-07T15:19:58] replicas now 1
+[2026-11-07T15:19:58] HPA: parser Deployment/parser cpu: 0%/70% 1 2 2 81s
+[2026-11-07T15:20:14] HPA: parser Deployment/parser cpu: 0%/70% 1 2 1 97s
+[2026-11-07T15:20:29] HPA: parser Deployment/parser cpu: 0%/70% 1 2 1 112s
+[2026-11-07T15:20:44] HPA: parser Deployment/parser cpu: 180%/70% 1 2 1 2m7s
+[2026-11-07T15:20:59] HPA: parser Deployment/parser cpu: 199%/70% 1 2 2 2m22s
+[2026-11-07T15:21:14] HPA: parser Deployment/parser cpu: 199%/70% 1 2 2 2m37s
+[2026-11-07T15:21:29] HPA: parser Deployment/parser cpu: 199%/70% 1 2 2 2m52s
+[2026-11-07T15:21:44] HPA: parser Deployment/parser cpu: 199%/70% 1 2 2 3m7s
+[2026-11-07T15:21:59] HPA: parser Deployment/parser cpu: 199%/70% 1 2 2 3m22s
+[2026-11-07T15:22:14] HPA: parser Deployment/parser cpu: 198%/70% 1 2 2 3m37s
+[2026-11-07T15:22:29] HPA: parser Deployment/parser cpu: 197%/70% 1 2 2 3m52s
+[2026-11-07T15:22:45] HPA: parser Deployment/parser cpu: 198%/70% 1 2 2 4m8s
+[2026-11-07T15:23:00] HPA: parser Deployment/parser cpu: 198%/70% 1 2 2 4m23s
+[2026-11-07T15:23:15] HPA: parser Deployment/parser cpu: 197%/70% 1 2 2 4m38s
+[2026-11-07T15:23:30] HPA: parser Deployment/parser cpu: 197%/70% 1 2 2 4m53s
+[2026-11-07T15:23:45] HPA: parser Deployment/parser cpu: 198%/70% 1 2 2 5m8s
+[2026-11-07T15:24:00] requests=1134 failures=0 (0.00%) p50=1100ms p95=1400ms rps=4.739245991354425
+[2026-11-07T15:24:00] after load: parser Deployment/parser cpu: 198%/70% 1 2 2 5m23s
+[2026-11-07T15:24:15] after load: parser Deployment/parser cpu: 197%/70% 1 2 2 5m38s
+[2026-11-07T15:24:30] after load: parser Deployment/parser cpu: 127%/70% 1 2 2 5m53s
+[2026-11-07T15:24:45] after load: parser Deployment/parser cpu: 0%/70% 1 2 2 6m8s
+[2026-11-07T15:25:00] after load: parser Deployment/parser cpu: 0%/70% 1 2 2 6m23s
+[2026-11-07T15:25:15] after load: parser Deployment/parser cpu: 0%/70% 1 2 2 6m38s
+[2026-11-07T15:25:31] after load: parser Deployment/parser cpu: 0%/70% 1 2 2 6m54s
+[2026-11-07T15:25:46] after load: parser Deployment/parser cpu: 0%/70% 1 2 1 7m9s
+[2026-11-07T15:26:01] after load: parser Deployment/parser cpu: 0%/70% 1 2 1 7m24s
+[2026-11-07T15:26:16] after load: parser Deployment/parser cpu: 0%/70% 1 2 1 7m39s
+[2026-11-07T15:26:31] after load: parser Deployment/parser cpu: 0%/70% 1 2 1 7m54s
+[2026-11-07T15:26:46] after load: parser Deployment/parser cpu: 0%/70% 1 2 1 8m9s
