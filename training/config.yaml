@@ -18,3 +18,4 @@ library_versions:
 versions:                       # per-model overrides
   v1: {}
   v2: {seed: 7, epochs: 8}      # second model: other seed + 2 more epochs
+  v3: {learning_rate: 0.0001, epochs: 8}
