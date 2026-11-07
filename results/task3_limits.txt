@@ -1,0 +1,55 @@
+01 {"intent":"calendar_remove","date":"upcoming","time":null,"place":null} | 330.3MiB / 1GiB | 0.27%
+02 {"intent":"alarm_set","date":"sunday","time":"five in the morning","place":null} | 335MiB / 1GiB | 0.27%
+03 {"intent":"datetime_query","date":null,"time":"the third","place":null} | 335MiB / 1GiB | 0.26%
+04 {"intent":"calendar_query","date":null,"time":"start","place":null} | 335MiB / 1GiB | 0.23%
+05 {"intent":"alarm_set","date":"tuesday","time":"six pm","place":null} | 335MiB / 1GiB | 0.30%
+06 {"intent":"calendar_set","date":"afternoon","time":null,"place":null} | 335.1MiB / 1GiB | 0.21%
+07 {"intent":"datetime_query","date":"the fourteenth","time":null,"place":null} | 335.1MiB / 1GiB | 0.18%
+08 {"intent":"calendar_query","date":"this weekend","time":null,"place":null} | 335.1MiB / 1GiB | 0.22%
+09 {"intent":"datetime_query","date":null,"time":"central","place":null} | 335.1MiB / 1GiB | 0.20%
+10 {"intent":"calendar_query","date":null,"time":null,"place":null} | 335.1MiB / 1GiB | 0.23%
+11 {"intent":"weather_query","date":"this week","time":null,"place":null} | 335.1MiB / 1GiB | 0.26%
+12 {"intent":"datetime_query","date":null,"time":null,"place":"pst"} | 335.2MiB / 1GiB | 0.26%
+13 {"intent":"recommendation_events","date":null,"time":null,"place":"area"} | 335.4MiB / 1GiB | 0.19%
+14 {"intent":"calendar_query","date":"next","time":null,"place":null} | 335.4MiB / 1GiB | 0.23%
+15 {"intent":"calendar_remove","date":"today","time":null,"place":null} | 335.2MiB / 1GiB | 0.27%
+16 {"intent":"calendar_set","date":null,"time":null,"place":null} | 335.2MiB / 1GiB | 0.27%
+17 {"intent":"alarm_set","date":null,"time":null,"place":"this time"} | 335.2MiB / 1GiB | 0.26%
+18 {"intent":"calendar_set","date":"tomorrow","time":"an hour before","place":null} | 336MiB / 1GiB | 0.20%
+19 {"intent":"calendar_query","date":null,"time":null,"place":null} | 336MiB / 1GiB | 0.26%
+20 {"intent":"weather_query","date":null,"time":null,"place":"our city"} | 336MiB / 1GiB | 0.17%
+21 {"intent":"calendar_query","date":null,"time":null,"place":null} | 336.1MiB / 1GiB | 0.29%
+22 {"intent":"calendar_set","date":null,"time":null,"place":null} | 336.1MiB / 1GiB | 0.29%
+23 {"intent":"calendar_set","date":"every june fifth","time":null,"place":null} | 336.1MiB / 1GiB | 0.28%
+24 {"intent":"datetime_query","date":"a date","time":null,"place":null} | 336.1MiB / 1GiB | 0.26%
+25 {"intent":"datetime_query","date":"now","time":null,"place":"new york"} | 336.1MiB / 1GiB | 0.25%
+26 {"intent":"weather_query","date":null,"time":"five days","place":"new york city"} | 336.1MiB / 1GiB | 0.34%
+27 {"intent":"calendar_query","date":"today","time":null,"place":null} | 336.1MiB / 1GiB | 0.30%
+28 {"intent":"weather_query","date":null,"time":null,"place":"home"} | 336.1MiB / 1GiB | 0.26%
+29 {"intent":"alarm_query","date":null,"time":null,"place":null} | 336.2MiB / 1GiB | 0.18%
+30 {"intent":"alarm_set","date":null,"time":"ten am","place":null} | 336.2MiB / 1GiB | 0.21%
+31 {"intent":"calendar_query","date":"today","time":null,"place":null} | 336.2MiB / 1GiB | 0.25%
+32 {"intent":"datetime_query","date":"this year","time":null,"place":"this year"} | 336.2MiB / 1GiB | 0.24%
+33 {"intent":"alarm_set","date":"next tuesday","time":"eight hundred am","place":null} | 336.2MiB / 1GiB | 0.21%
+34 {"intent":"calendar_query","date":null,"time":null,"place":null} | 336.2MiB / 1GiB | 0.25%
+35 {"intent":"alarm_set","date":"today","time":null,"place":null} | 336.2MiB / 1GiB | 0.20%
+36 {"intent":"alarm_query","date":null,"time":"seven am","place":null} | 336.3MiB / 1GiB | 0.22%
+37 {"intent":"calendar_set","date":"tomorrow","time":"seven","place":null} | 336.3MiB / 1GiB | 0.27%
+38 {"intent":"calendar_set","date":"monday","time":"six","place":null} | 336.7MiB / 1GiB | 0.29%
+39 {"intent":"calendar_set","date":"wyatt birthday","time":null,"place":"wyatt"} | 336.7MiB / 1GiB | 0.23%
+40 {"intent":"alarm_set","date":null,"time":null,"place":"in the hour"} | 336.7MiB / 1GiB | 0.20%
+41 {"intent":"datetime_query","date":null,"time":null,"place":"california"} | 336.7MiB / 1GiB | 0.19%
+42 {"intent":"datetime_query","date":null,"time":null,"place":"beijing"} | 336.7MiB / 1GiB | 0.29%
+43 {"intent":"alarm_query","date":null,"time":null,"place":null} | 336.7MiB / 1GiB | 0.22%
+44 {"intent":"datetime_query","date":"fifteenth","time":null,"place":null} | 336.8MiB / 1GiB | 0.21%
+45 {"intent":"alarm_set","date":"next t.","time":null,"place":null} | 336.8MiB / 1GiB | 0.18%
+46 {"intent":"calendar_query","date":"friday","time":null,"place":null} | 336.8MiB / 1GiB | 0.27%
+47 {"intent":"datetime_query","date":null,"time":null,"place":null} | 336.8MiB / 1GiB | 0.18%
+48 {"intent":"calendar_remove","date":null,"time":"one pm","place":null} | 336.8MiB / 1GiB | 0.29%
+49 {"intent":"calendar_query","date":"first of january","time":null,"place":null} | 337.6MiB / 1GiB | 0.20%
+50 {"intent":"calendar_set","date":"today","time":"one pm","place":null} | 337.6MiB / 1GiB | 0.19%
+
+50 requests sent, 50 returned HTTP 200; OOMKilled=false; peak memory 338 MiB (limit 1024 MiB)
+CONTAINER ID   NAME            CPU %     MEM USAGE / LIMIT   MEM %     NET I/O          BLOCK I/O        PIDS
+be7292050fc5   parser-limits   0.16%     337.6MiB / 1GiB     32.97%    355MB / 9.13MB   11.7MB / 285MB   2
+image size: 0.34 GB (limit 2 GB)

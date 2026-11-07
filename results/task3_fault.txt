@@ -1,0 +1,1 @@
+fault injection returned expected HTTP 500: {"error":"invalid_model_output"}
