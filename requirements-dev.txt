@@ -1,0 +1,10 @@
+# Development environment (Windows: Python 3.11, `pip install -r requirements-dev.txt`)
+-r requirements-ci.txt
+torch==2.5.1
+transformers==4.46.3
+tokenizers==0.20.3
+safetensors==0.4.5
+numpy==1.26.4
+boto3==1.35.70
+locust==2.32.4
+reportlab==4.2.5

@@ -1,0 +1,10 @@
+fastapi==0.115.5
+uvicorn==0.32.1
+pydantic==2.10.3
+transformers==4.46.3
+tokenizers==0.20.3
+safetensors==0.4.5
+huggingface-hub==0.26.5
+numpy==1.26.4
+boto3==1.35.70
+jsonschema==4.23.0

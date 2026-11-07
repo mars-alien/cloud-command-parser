@@ -1,0 +1,20 @@
+# Single source of truth for `make train` (reads only this file).
+base_model: EleutherAI/pythia-70m
+train_path: data/train.jsonl
+max_train_examples: 1500        # first 1,500 records of the cleaned dataset
+seed: 42
+learning_rate: 0.0003
+batch_size: 16
+epochs: 6
+max_seq_length: 96
+weight_decay: 0.01
+warmup_ratio: 0.05
+library_versions:
+  python: "3.11"
+  torch: "2.5.1"
+  transformers: "4.46.3"
+  numpy: "1.26.4"
+  pyyaml: "6.0.2"
+versions:                       # per-model overrides
+  v1: {}
+  v2: {seed: 7, epochs: 8}      # second model: other seed + 2 more epochs

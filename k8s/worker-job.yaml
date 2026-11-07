@@ -1,0 +1,30 @@
+# Two teacher-labelling workers running at the same time (Indexed Job: SHARD_INDEX = 0, 1).
+# Teacher = Ollama on the host (host.docker.internal:11434).
+apiVersion: batch/v1
+kind: Job
+metadata: {name: teacher-labelling, namespace: pipeline}
+spec:
+  completions: 2
+  parallelism: 2
+  completionMode: Indexed
+  backoffLimit: 20
+  template:
+    spec:
+      restartPolicy: OnFailure
+      containers:
+        - name: worker
+          image: parser-worker:1.0
+          imagePullPolicy: Never
+          env:
+            - name: SHARD_INDEX
+              valueFrom: {fieldRef: {fieldPath: "metadata.annotations['batch.kubernetes.io/job-completion-index']"}}
+            - {name: SHARD_COUNT, value: "2"}
+            - {name: S3_ENDPOINT, value: "http://seaweedfs.data.svc.cluster.local:8333"}
+            - {name: OLLAMA_URL, value: "http://host.docker.internal:11434"}
+            - name: AWS_ACCESS_KEY_ID
+              valueFrom: {secretKeyRef: {name: s3-credentials, key: AWS_ACCESS_KEY_ID}}
+            - name: AWS_SECRET_ACCESS_KEY
+              valueFrom: {secretKeyRef: {name: s3-credentials, key: AWS_SECRET_ACCESS_KEY}}
+          resources:
+            requests: {cpu: 50m, memory: 64Mi}
+            limits: {memory: 256Mi}

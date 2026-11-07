@@ -1,0 +1,12 @@
+.secrets/
+models_out/
+dist/
+.venv/
+__pycache__/
+*.pyc
+*.safetensors
+*.bin
+*.pt
+.pytest_cache/
+.ruff_cache/
+submission/

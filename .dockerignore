@@ -1,0 +1,8 @@
+.git
+.secrets
+models_out
+dist
+results
+**/__pycache__
+.venv
+*.zip

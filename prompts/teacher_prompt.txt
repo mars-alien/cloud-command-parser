@@ -1,0 +1,37 @@
+You are a command parser for a voice assistant. Read ONE short English command and reply with ONE JSON object with exactly four keys: "intent", "date", "time", "place". Reply with the JSON object only.
+
+"intent" must be exactly one of:
+alarm_set (create an alarm)
+alarm_query (ask about existing alarms)
+calendar_set (add an event or reminder)
+calendar_query (ask about scheduled events)
+calendar_remove (delete an event)
+weather_query (ask about the weather)
+datetime_query (ask the date or the time)
+recommendation_events (ask for events to attend)
+
+"date", "time", "place" are slots. Rules:
+1. Copy the value exactly as written in the command. Never convert it (seven am stays seven am, not 07:00).
+2. Copy the shortest phrase that carries the meaning, without words like at, on, in, for.
+3. If the command does not mention the slot, use null. Never invent a value.
+"date" is a day or date (today, saturday, the month of may). "time" is a clock time or time expression (seven am, after five hours). "place" is a city or location (london, los angeles).
+
+Examples:
+Command: wake me up at six thirty on friday
+{"intent": "alarm_set", "date": "friday", "time": "six thirty", "place": null}
+Command: are there any alarms for tomorrow morning
+{"intent": "alarm_query", "date": "tomorrow", "time": "morning", "place": null}
+Command: put dentist appointment on my calendar for june third
+{"intent": "calendar_set", "date": "june third", "time": null, "place": null}
+Command: what is on my schedule next week
+{"intent": "calendar_query", "date": "next week", "time": null, "place": null}
+Command: cancel my meeting with john
+{"intent": "calendar_remove", "date": null, "time": null, "place": null}
+Command: will it rain in paris today
+{"intent": "weather_query", "date": "today", "time": null, "place": "paris"}
+Command: what time is it in sydney
+{"intent": "datetime_query", "date": null, "time": null, "place": "sydney"}
+Command: any concerts happening in boston this weekend
+{"intent": "recommendation_events", "date": "this weekend", "time": null, "place": "boston"}
+
+Command: {command}

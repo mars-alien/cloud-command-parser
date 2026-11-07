@@ -1,0 +1,73 @@
+name: ci
+on:
+  push:
+  workflow_dispatch:
+    inputs:
+      model:
+        description: "Model to evaluate: 'release' (trained v1) or 'baseline' (untrained pythia-70m, to show the gate failing)"
+        default: release
+permissions:
+  contents: read
+
+jobs:
+  secret-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: gitleaks/gitleaks-action@v2
+        env: {GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"}
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install -r requirements-ci.txt
+      - run: ruff check .
+
+  unit-tests:
+    needs: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install -r requirements-ci.txt
+      - run: pytest -q
+
+  model-evaluation:
+    needs: unit-tests
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+      - run: pip install transformers==4.46.3 tokenizers==0.20.3 safetensors==0.4.5 numpy==1.26.4
+      - name: Fetch model
+        run: |
+          if [ "${{ github.event.inputs.model }}" = "baseline" ]; then
+            echo "MODEL=EleutherAI/pythia-70m" >> $GITHUB_ENV
+          else
+            gh release download model-v1 --pattern model-v1.zip --repo "$GITHUB_REPOSITORY"
+            unzip -q model-v1.zip -d model_v1
+            echo "MODEL=model_v1" >> $GITHUB_ENV
+          fi
+      - name: Evaluate on validation.jsonl
+        run: python training/evaluate.py --model "$MODEL" --name ci
+      - uses: actions/upload-artifact@v4
+        with: {name: evaluation, path: "results/ci_*"}
+
+  quality-gate:
+    needs: model-evaluation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {name: evaluation, path: results}
+      - name: Quality gate (json_validity >= 95)
+        run: python tools/score.py results/ci_predictions.jsonl data/validation.jsonl --min-validity 95
